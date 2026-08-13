@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EH7QPGEXWR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-EH7QPGEXWR');
+  </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>IOD-North | Incoming Soldier Orientation</title>
+<link rel="icon" type="image/png" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -78,12 +88,11 @@
     display:flex; align-items:center; gap:0.65rem;
   }
   .brand-mark{
-    width:34px; height:34px; border:1.5px solid var(--gold);
-    display:flex; align-items:center; justify-content:center;
-    font-family:'IBM Plex Mono'; font-weight:600; font-size:0.72rem;
-    color:var(--gold); flex-shrink:0; transform:rotate(45deg);
+    width:38px; height:38px; border-radius:50%; overflow:hidden;
+    border:1.5px solid var(--gold); background:var(--bg);
+    display:flex; align-items:center; justify-content:center; flex-shrink:0;
   }
-  .brand-mark span{ transform:rotate(-45deg); }
+  .brand-mark img{ width:100%; height:100%; object-fit:cover; }
   .brand-text{ font-family:'Oswald'; letter-spacing:0.08em; font-size:0.95rem; }
   .brand-text small{
     display:block; font-family:'IBM Plex Mono'; text-transform:none;
@@ -369,12 +378,12 @@
 </head>
 <body>
 
-<a href="#ranks" class="skip-link">Skip to content</a>
+<a href="#checklist" class="skip-link">Skip to content</a>
 
 <header class="tabstrip">
   <div class="tabstrip-inner">
     <div class="brand">
-      <div class="brand-mark"><span>IOD</span></div>
+      <div class="brand-mark"><img src="logo.png" alt="IOD-North crest"></div>
       <div class="brand-text">IOD-NORTH
         <small>Incoming Soldier Orientation</small>
       </div>
@@ -389,6 +398,7 @@
       <a href="#apps">06 Apps</a>
       <a href="#safety">07 Safety</a>
       <a href="#emergency">08 Contacts</a>
+      <a href="#feedback">Feedback</a>
     </nav>
   </div>
 </header>
@@ -406,8 +416,8 @@
   </div>
 </div>
 
-<div class="mission" style="padding-bottom: 32px;"">
-  <div class="mission-card">
+<div class="mission">
+  <div class="mission-card" style="padding-bottom:32px;">
     <div class="mission-label">Why you're here</div>
     <p>Ground Operations Command (GOC) keeps watch along the DMZ in peacetime. In a fight, it becomes the Combined Ground Component Command (CGCC) — the ROK-US combined element that would fight the DPRK. You're here to help build that combined element for UFS26.</p>
     <div class="mission-terms">
@@ -525,7 +535,7 @@
     <span class="section-num">03</span>
     <h2>Around the Base</h2>
   </div>
-  <p class="section-sub">Facilities and everyday spots within easy reach of IOD-North, shared during the FS26 exercise brief. Laundry, barber, and gym are on-post and briefed separately — not listed here.</p>
+  <p class="section-sub">Facilities and everyday spots within easy reach of IOD-North, shared during the UFS26 exercise brief. Laundry, barber, and gym are on-post and briefed separately — not listed here.</p>
   <div class="grid">
     <div class="card">
       <div class="card-cat">Food & Shopping</div>
@@ -873,9 +883,23 @@
   </div>
 </section>
 
+<!-- ===== FEEDBACK ===== -->
+<section id="feedback" style="border-bottom:none; padding-bottom:2rem;">
+  <div class="section-head">
+    <span class="section-num">✦</span>
+    <h2>Give Feedback</h2>
+  </div>
+  <p class="section-sub">Found a broken link, wrong hours, or something missing? Two minutes, helps the next rotation.</p>
+  <!-- REPLACE the href below with your real Google Form link once it's created -->
+  <a class="callout-link" href="REPLACE_WITH_GOOGLE_FORM_URL" target="_blank" rel="noopener">
+    <div class="callout-text"><b>Leave Feedback</b><span>Report an issue or suggest something to add</span></div>
+    <span class="callout-go">Open Form ↗</span>
+  </a>
+</section>
+
 <footer>
   <span>IOD-North · Incoming Soldier Orientation</span>
-  <span>Draft v1 — update sections 02–04 with real locations before distribution</span>
+  <span>UFS26 Welcome Packet — verify details each rotation</span>
 </footer>
 
 <a href="#top" class="to-top" id="toTop" aria-label="Back to top">↑</a>
